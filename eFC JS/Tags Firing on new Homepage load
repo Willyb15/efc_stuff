@@ -1,0 +1,24 @@
+Tags Firing on new Homepage load
+
+NavTrack Bindings - Header and Footer
+NatTrack Bindings - Hippo Homepage
+NavTrack Bindings - Homepage
+NavTrack Page Load
+
+Current origin is same as relevance origin - exiting
+
+http://news.efinancialcareers.com/us-en/215900/13-questions-you-will-always-be-asked-in-a-corporate-banking-interview-and-how-to-answer-them/?_ga=2.120165312.919800861.1502733510-195787886.1502733510
+
+//  fbq('trackCustom','job view',{
+//     'job id' : {{DL - JOB_ID}},
+//     'company' : {{DL - JOB_COMPANY}},
+//     'sector' : {{DL - JOB_SECTOR}}
+//});
+
+dataLayer.push({
+        'event' : 'NavTrack Store Data',
+        'NavTrackPage' : url,
+        'NavTrackRegion' : "Header",
+        'NavTrackNavItem' : "Header Logo",
+        'NavTrackRecordImmediately' : "false"
+    });

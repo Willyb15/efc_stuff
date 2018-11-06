@@ -1,0 +1,49 @@
+<!-- <! Proposed new code for job view -->
+<script>
+
+fbq('track', 'ViewContent', {
+  content_name: {{DL - APPLIED_JOB_COMPANY}},
+  content_category: {{DL - APPLIED_JOB_SECTOR}},
+  content_ids: {{DL - APPLIED_JOB_ID}},
+  content_type: 'job view'
+ });
+
+  fbq('trackCustom','job view',{
+     'job id' : {{DL - JOB_ID}},
+     'company' : {{DL - JOB_COMPANY}},
+     'sector' : {{DL - JOB_SECTOR}}
+});
+
+ </script>
+
+
+<!--  Proposed New Code for Job Application FB -->
+<script>
+    fbq('track', 'Purchase', {
+        value: '1.00',
+		currency: 'USD'
+		content_name: {{DL - APPLIED_JOB_COMPANY}},
+		content_category: {{DL - APPLIED_JOB_SECTOR}},
+		content_ids: {{DL - APPLIED_JOB_ID}},
+		content_type: 'job application'
+    });
+  
+  	fbq('trackCustom','job application',{
+       'job id' : {{DL - APPLIED_JOB_ID}},
+       'company' : {{DL - APPLIED_JOB_COMPANY}},
+       'sector' : {{DL - APPLIED_JOB_SECTOR}}
+  });
+
+</script>
+
+<!-- New Tag for when click Apply Button -->
+<script>
+
+fbq('track', 'AddToCart', {
+  content_name: {{DL - APPLIED_JOB_COMPANY}},
+  content_category: {{DL - APPLIED_JOB_SECTOR}},
+  content_ids: {{DL - APPLIED_JOB_ID}},
+  content_type: 'job application click'
+ });
+ </script>
+
